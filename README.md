@@ -1,3 +1,31 @@
+# Website Performance Optimization portfolio project
+
+##### Launch Application
+
+Open index.html in a browser of your choice.
+
+#### Optimizations completed
+
+#### Pagespeed
+
+* inlined style.css using https://cssminifier.com/
+* removed call to Google web font
+* moved Google analytics call to end of page load
+* made print.css media type print
+* ensured async javascript calls
+* reduced image sizes
+
+*Achieved PageSpeed score of 94 and 93 for mobile and desktop respectively*
+
+#### FPS
+
+Removed unessary code from for statements to improve javascript performance...
+* In changePizzaSizes function: removed query selector and variable assignment from for loop for javascript performance improvement
+* In updatePositions function: removed call to find the scrollTop value from for loop
+* Updated queryselector usage to faster getElementByID: updated to use getElementByID...see http://jsperf.com/getelementbyid-vs-queryselector
+
+----------
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
